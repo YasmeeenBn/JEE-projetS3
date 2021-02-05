@@ -11,7 +11,7 @@
     <body>
         <%--<%@page import="java.sql.*" %>--%>
         <!--<form action="/register" method="post">-->
-        <form action="index.jsp" method="post">
+        <!-- <form action="index.jsp" method="post"> -->
             
          <% //
 //            try{
@@ -25,15 +25,15 @@
 //                while(rs.next()){
 //          %>
 
-
       
-        <h1>Sign Up</h1>
+        <h1>Sign In</h1>
         
+        <form action="<%= request.getContextPath() %>/login" method="post">
         <fieldset>
             <legend><span class="number">1</span>LOGIN</legend>
 
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="mail">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password">
@@ -44,7 +44,6 @@
                 <!--<button type="submit"  ><a href="./../accesdenied/" > sign up </a></button>-->
 
 
-        
     </form>
                   </body>
     

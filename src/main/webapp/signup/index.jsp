@@ -32,10 +32,10 @@
         
         <fieldset>
             <legend><span class="number">1</span>Your basic info</legend>
-            <label for="nom">Name:</label>
-            <input type="text" id="nom" name="nom">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
 
-            <label for="adress">Adress</label>
+            <label for="adress">Adress: </label>
             <input type="text" id="adress" name="adress">
 
             <label for="phone">Phone Number: </label>
