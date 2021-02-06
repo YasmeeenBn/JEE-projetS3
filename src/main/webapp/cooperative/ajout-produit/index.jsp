@@ -5,7 +5,8 @@
 <head>
 <meta charset="">
 <link href="stylesheet.css" rel="stylesheet">
-<title>Insert title here</title>
+
+<title>Add Product</title>
 </head>
 <body>
 
@@ -36,45 +37,30 @@
 
 <!--   **************************************************************** SIDE BAR ***************** -->
 
+
 <!--   **************************************************************** CONTENTS ***************** -->
 <section id="contents">
-  <nav class="navbar navbar-default">
-<!--     <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <i class="fa fa-align-right"></i>
-        </button>
-        <a class="navbar-brand" href="#">my<span class="main-color">Dashboard</span></a>
-      </div>
 
-    </div> -->
-  </nav>
   <div class="welcome">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
           <div class="content">
-            <h2>Produits</h2>
+            <h2>Ajouter Produits</h2>  
+          </div>
+        <div class="content">
+          
+<!--   **************************************************************** contenu ***************** -->
+
+
+<!--   **************************************************************** contenu ***************** -->          
+            
           </div>
         </div>
       </div>
     </div>
   </div>
-  <section class="statistics">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="box">
-            <i class="fa fa-envelope fa-fw bg-primary"></i>
-            <div class="info">
-              <h3>1,245</h3> <span>Emails</span>
-              <p> jhfhghkj</p>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-  </section>
+  
 
   </section>
   
