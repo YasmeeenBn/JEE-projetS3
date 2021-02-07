@@ -5,16 +5,18 @@
 <head>
 <meta charset="">
 <link href="stylesheet.css" rel="stylesheet">
+<link href="stylesheet2.css" rel="stylesheet">
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
 <title>Add Product</title>
 </head>
 <body>
 
-
 <!--   **************************************************************** SIDE BAR ************************* -->
 
 <aside class="side-nav" id="show-side-navigation1">
   <i class="fa fa-bars close-aside hidden-sm hidden-md hidden-lg" data-close="show-side-navigation1"></i>
+  
   <div class="heading">
     <img src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907008/medium/1501685726/enhance" alt="">
     <div class="info">
@@ -52,7 +54,28 @@
           
 <!--   **************************************************************** contenu ***************** -->
 
+<div class="container">
+  <form action="<%= request.getContextPath() %>/ajouterproduit" method="post">
+    <div class="form-group">
+      <label for="name" class="font-bold">Nom du produit <br> </label>
+      <input id="name" name="name" placeholder="" type="text" class="form-control text-black pl-3 m-3 w-4/5 h-7 rounded-sm focus:ring-2 focus:ring-blue-600 focus:outline-none hover:bg-blue-200">
+    </div>
+    <div class="form-group">
+      <label for="categorie" class="font-bold"> Categorie du produit <br> </label>
+      <input id="categorie" name="categorie" placeholder="" type="text"  class="form-control text-black pl-3 m-3 w-4/5 h-7 rounded-sm focus:ring-2 focus:ring-blue-600 focus:outline-none hover:bg-blue-200" >
+    </div>
+    <div class="form-group">
+      <label for="prix" class="font-bold">prix <br> </label>
+      <input id="prix" name="prix" type="text" class="form-control text-black pl-3 m-3 w-4/5 h-7 rounded-sm focus:ring-2 focus:ring-blue-600 focus:outline-none hover:bg-blue-200">
+    </div>
+        <div class="form-group">
+      <label for="description" class="font-bold">Description <br> </label>
+      <input id="description" name="description" type="text" class="form-control text-black pl-3 m-3  w-4/5 h-7 rounded-sm focus:ring-2 focus:ring-blue-600 focus:outline-none hover:bg-blue-200">
+    </div>
+	<button type="submit" >Submit</button>
+</form>
 
+</div>
 <!--   **************************************************************** contenu ***************** -->          
             
           </div>
@@ -66,4 +89,8 @@
   
   </body>
   <script src="script.js"></script>
+  <script src="script2.js"></script>
+
+
+
 </html>
