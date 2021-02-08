@@ -5,7 +5,8 @@
 <head>
 <meta charset="">
 <link href="stylesheet.css" rel="stylesheet">
-<title>Insert title here</title>
+<link href="stylesheet2.css" rel="stylesheet">
+<title>Modifier/supprimer produit</title>
 </head>
 <body>
 
@@ -54,30 +55,82 @@
       <div class="row">
         <div class="col-md-12">
           <div class="content">
-            <h2>Produits</h2>
+            <h2>Produits a modifier/Supprimer</h2>            
           </div>
+<!--   **************************************************************** DB ***************** -->
+<%@page import="java.sql.*" %>
+<%@ page import="java.io.*" %>
+<%@page import="java.sql.DriverManager"%>
+<%@page import="java.sql.ResultSet"%>
+<%@page import="java.sql.Statement"%>
+<%@page import="java.sql.Connection"%>
+
+<div id="grid">
+<%
+	
+//	String id = request.getParameter("id");
+	try{
+	    Class.forName("com.mysql.jdbc.Driver").newInstance();
+	   Connection conn =  DriverManager.getConnection("jdbc:mysql://localhost:3308/projets3","root","yas");
+	//     Connection conn =  DriverManager.getConnection("mysql:host=localhost;dbname=projets3","root", "");
+	    Statement stmt = conn.createStatement();
+	    String sql ="select * from produit where active=1 ";
+	    ResultSet rs = stmt.executeQuery(sql);
+	    
+	//    while(rs.next()){
+	    
+	    %>
+
+<table>
+
+  <thead>
+    <tr>
+      <th scope="col">Produit</th>
+      <th scope="col">Description</th>
+      <th scope="col">Prix</th>
+      <th scope="col">Categorie</th>
+      <th scope="col">Modifier</th>
+      <th scope="col">Supprimer</th>
+   
+    </tr>
+  </thead>
+
+<% while(rs.next()){ %>
+  <tbody>
+    <tr>
+      <td data-label="name"><%= rs.getString("name")%></td>
+      <td data-label="description"><%= rs.getString("description")%></td>
+      <td data-label="prix"><%= rs.getString("prix")%></td>
+      <td data-label="categorie"><%= rs.getString("categorie")%></td>
+      
+      <td> <a href="edit_update.jsp?id=<%= rs.getString("id")%>" class="btn btn-success"  >Modifier </a> </td>
+      <td> <a href="delete.jsp?id=<%= rs.getString("id")%>" class="btn btn-success"  >Supprimer </a> </td>
+	
+    </tr>
+
+  </tbody>
+  
+                        <%    }  %>   
+  
+</table>
+
+<!--   **************************************************************** contenu ***************** -->
         </div>
       </div>
     </div>
   </div>
-  <section class="statistics">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="box">
-            <i class="fa fa-envelope fa-fw bg-primary"></i>
-            <div class="info">
-              <h3>1,245</h3> <span>Emails</span>
-              <p> jhfhghkj</p>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-  </section>
+ 
+           <% 
+                if(stmt != null){  stmt.close();  }
+                if(conn != null){  conn.close();  }  }//fin bloc try 
+    
+                catch (Exception e){  out.print(e); }
+//          %>
+ 
 
   </section>
   
   </body>
   <script src="script.js"></script>
+  <script src="script2.js"></script>
 </html>

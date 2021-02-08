@@ -10,8 +10,18 @@
   	<description></description>
   	<servlet-class>net.javaguides.registration.controller.CooperativeServlet</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>FileUploadDBServlet</servlet-name>
+  	<display-name>FileUploadDBServlet</display-name>
+  	<description></description>
+  	<servlet-class>net.javaguides.add_product.controller.FileUploadDBServlet</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>CooperativeServlet</servlet-name>
   	<url-pattern>/CooperativeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>FileUploadDBServlet</servlet-name>
+  	<url-pattern>/FileUploadDBServlet</url-pattern>
   </servlet-mapping>
 </web-app>
