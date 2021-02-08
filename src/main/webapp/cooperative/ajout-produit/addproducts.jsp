@@ -55,7 +55,7 @@
 <!--   **************************************************************** contenu ***************** -->
 
 <div class="container">
-  <form action="<%= request.getContextPath() %>/ajouterproduit" method="post">
+  <form action="<%= request.getContextPath() %>/ajouterproduit" method="post" enctype="multipart/form-data">
     <div class="form-group">
       <label for="name" class="font-bold">Nom du produit <br> </label>
       <input id="name" name="name" placeholder="" type="text" class="form-control text-black pl-3 m-3 w-4/5 h-7 rounded-sm focus:ring-2 focus:ring-blue-600 focus:outline-none hover:bg-blue-200">
@@ -71,7 +71,12 @@
         <div class="form-group">
       <label for="description" class="font-bold">Description <br> </label>
       <input id="description" name="description" type="text" class="form-control text-black pl-3 m-3  w-4/5 h-7 rounded-sm focus:ring-2 focus:ring-blue-600 focus:outline-none hover:bg-blue-200">
-    </div>
+    </div>	
+    <div class="form-group">
+		<label for="image" class="font-bold">Image <br> </label>
+        <input type="file" name="image" /> 
+	</div>
+    
 	<button type="submit" >Submit</button>
 </form>
 
