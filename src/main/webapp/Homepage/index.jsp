@@ -31,8 +31,8 @@ and open the template in the editor.
         <li><a href="">Cooperatives</a></li>
         <li><a href="">My cart</a></li>
         <li><a href="">Contact</a></li> 
-        <li><a href="http://localhost:8080/ProjetS3-Ecommerce/signin/">Sign In  </a></li>
-        <li><a href="http://localhost:8080/ProjetS3-Ecommerce/signup/">Sign Up </a></li>
+        <li><a href="http://localhost:8080/project/signin/signin.jsp">Sign In  </a></li>
+        <li><a href="http://localhost:8080/project/signup/signup.jsp">Sign Up </a></li>
     </ul>		
 </div>
     
@@ -64,7 +64,7 @@ and open the template in the editor.
        Connection conn =  DriverManager.getConnection("jdbc:mysql://localhost:3308/projets3","root","yas");
    //     Connection conn =  DriverManager.getConnection("mysql:host=localhost;dbname=projets3","root", "");
         Statement stmt = conn.createStatement();
-        String sql ="select * from produit";
+        String sql ="select * from produit where active=1";
         ResultSet rs = stmt.executeQuery(sql);
         while(rs.next()){
 %>

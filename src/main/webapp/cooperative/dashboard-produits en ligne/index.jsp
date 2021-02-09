@@ -60,21 +60,7 @@
       </div>
     </div>
   </div>
-  <section class="statistics">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="box">
-            <i class="fa fa-envelope fa-fw bg-primary"></i>
-            <div class="info">
-              <h3>1,245</h3> <span>Emails</span>
-              <p> jhfhghkj</p>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-  </section>
+
 
   </section>
   

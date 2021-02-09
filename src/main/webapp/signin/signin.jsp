@@ -41,6 +41,8 @@
         
 
         <button type="submit"> Sign In </button>
+        
+ <%--        <td> <a href="edit_update.jsp?id=<%= rs.getString("id")%>" class="btn btn-success"  >Modifier </a> </td> --%>
                 <!--<button type="submit"  ><a href="./../accesdenied/" > sign up </a></button>-->
 
 

@@ -6,6 +6,7 @@
 <meta charset="">
 <link href="stylesheet.css" rel="stylesheet">
 <link href="stylesheet2.css" rel="stylesheet">
+
 <title>Modifier/supprimer produit</title>
 </head>
 <body>
