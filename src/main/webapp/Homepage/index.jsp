@@ -22,7 +22,7 @@ and open the template in the editor.
 </div>
 <div class="cart-icon-bottom">
 </div>
-<div id="checkout"> <li><a href="">CHECKOUT</a></li> </div>
+<div id="checkout"> <li><a href="http://localhost:8080/project/client/shoppingcart/checkout.jsp">CHECKOUT</a></li> </div>
 
 
 <div id="header">	
@@ -58,6 +58,7 @@ and open the template in the editor.
 </div> 
  <%@page import="java.sql.*" %>
 <div id="grid">
+
 <%
     try{
         Class.forName("com.mysql.jdbc.Driver").newInstance();
@@ -66,6 +67,20 @@ and open the template in the editor.
         Statement stmt = conn.createStatement();
         String sql ="select * from produit where active=1";
         ResultSet rs = stmt.executeQuery(sql);
+        
+/*         Cookie c = null;
+/* <!--***************************************************************************************************************** PRODUCT **********-->*/
+/* /* /*        try {
+        	c = new Cookie(request.getParameter("id"),"1");
+        	response.addCookie(c);
+        	out.print("added");
+        } //fin bloc try 
+        catch (Exception e){
+            out.print(e);
+        } */
+
+/* <!--***************************************************************************************************************** PRODUCT **********--> */
+        
         while(rs.next()){
 %>
 
@@ -74,10 +89,6 @@ and open the template in the editor.
     <div class="product">
     	<div class="info-large">
         	<h4><%= rs.getString("name")%></h4>
-<%--             <div class="sku">
-            	Cooperative: <strong><%= rs.getString("cooperative")%></strong>
-            </div> --%>
-             
             <div class="price-big">
             	<span> </span> <%= rs.getString("prix")%>
             </div>
@@ -98,7 +109,6 @@ and open the template in the editor.
                         <span class="product_price"><%= rs.getString("prix")%></span>
                         <span class="product_name"><%= rs.getString("name")%></span>    
                         <p><%= rs.getString("description")%></p>                                            
-                        
                     </div>                         
                 </div>
         </div>	
