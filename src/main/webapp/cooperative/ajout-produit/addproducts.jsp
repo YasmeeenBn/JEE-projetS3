@@ -29,11 +29,11 @@
   </div> -->
   
   <ul class="categories">
-    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> Dashboard</a> </li>
-    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> Ajouter produit</a>
-    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> mes commandes <span class="num dang">56</span> </a>
-    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> Update produit</a>
-    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> Profile</a>
+    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="http://localhost:8080/project/cooperative/dashboard-produits%20en%20ligne/index.jsp"> Dashboard</a> </li>
+    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="http://localhost:8080/project/cooperative/ajout-produit/addproducts.jsp"> Ajouter produit</a>
+    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="http://localhost:8080/project/cooperative/commandes/index.jsp"> mes commandes <span class="num dang">2</span> </a>
+    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="http://localhost:8080/project/cooperative/udpate%20produit/index.jsp"> Update produit</a>
+   <!--  <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> Profile</a> -->
   </ul>
 </aside>
 

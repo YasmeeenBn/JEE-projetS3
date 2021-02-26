@@ -19,8 +19,8 @@
   <div class="heading">
     <img src="https://uniim1.shutterfly.com/ng/services/mediarender/THISLIFE/021036514417/media/23148907008/medium/1501685726/enhance" alt="">
     <div class="info">
-      <h3><a href="#">Mostafa Omar</a></h3>
-      <p>Lorem ipsum dolor sit amet consectetur.</p>
+      <h3><a href="#">Cooperative marocaine Amlil</a></h3>
+      <p></p>
     </div>
   </div>
 <!--   <div class="search">
@@ -28,11 +28,11 @@
   </div> -->
   
   <ul class="categories">
-    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> Dashboard</a> </li>
-    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> Ajouter produit</a>
-    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> mes commandes <span class="num dang">56</span> </a>
-    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> Update produit</a>
-    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> Profile</a>
+    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="http://localhost:8080/project/cooperative/dashboard-produits%20en%20ligne/index.jsp"> Dashboard</a> </li>
+    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="http://localhost:8080/project/cooperative/ajout-produit/addproducts.jsp"> Ajouter produit</a>
+    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="http://localhost:8080/project/cooperative/commandes/index.jsp"> mes commandes <span class="num dang">2</span> </a>
+    <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="http://localhost:8080/project/cooperative/udpate%20produit/index.jsp"> Update produit</a>
+   <!--  <li><i class="fa fa-home fa-fw" aria-hidden="true"></i><a href="#"> Profile</a> -->
   </ul>
 </aside>
 
